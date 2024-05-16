@@ -87,6 +87,10 @@ pub async fn broadcast_tx(rpc_client: &WebSocketClient, tx_bytes: Vec<u8>) -> Re
 		.broadcast_tx_sync(tx_bytes)
 		.await
 		.map_err(|e| Error::from(format!("failed to broadcast transaction {e:?}")))?;
+
+	
+	println!("{:?}", response); // Print the response to the console
+
 	Ok(response.hash)
 }
 
