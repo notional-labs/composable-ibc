@@ -29,7 +29,7 @@ guestchain = { git = "https://github.com/ComposableFi/emulated-light-client/", d
 base64 = { version = "0.22", default-features = false, features = ["alloc"] }
 borsh = { version = "0.10.3", default-features = false }
 cosmwasm-schema = "1.5.3"
-cosmwasm-std = "1.5.3"
+cosmwasm-std = "1.5.4"
 derive_more = "0.99.17"
 ed25519-dalek = { version = "2.1.1", default-features = false, features = ["pkcs8"] }
 
